@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} Магазин {% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Наш интернет-магазин</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Главная</a></li>
+                <li><a href="/clothing/">Одежда</a></li>
+                <li><a href="/shoes/">Обувь</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        Главная
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Наш интернет-магазин</p>
+    </footer>
+</body>
+</html>
